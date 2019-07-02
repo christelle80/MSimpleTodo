@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <ListView
+        android:id="@+id/lvItems"
+        android:layout_width="wrap_content"
+        android:layout_height="680dp" />
+
+    <EditText
+        android:id="@+id/etNewItem"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_x="2dp"
+        android:layout_y="684dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/add_a_new_item_here"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="670dp" />
+
+    <Button
+        android:id="@+id/btnAdditem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_x="318dp"
+        android:layout_y="682dp"
+        android:onClick="onAddItem"
+        android:text="@string/add"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+</AbsoluteLayout>
